@@ -4,13 +4,13 @@
 
 Maria, the chief data scientist for a school city system, is responsible for analyzing standardized testing results used by the School Board and the School Superintendent in evaluating the efficacy of these tests and determining budgetary allocation among the schools.
 
-The School Board has notified Maria and her supervisor that the data file containing all student scores shoes evidence of academic dishonesty, specifically, reading and math scores for ninth graders at the Thomas High School.
+The School Board has notified Maria and her supervisor that the data file containing all student scores shows evidence of academic dishonesty, specifically, reading and math scores for ninth graders at the Thomas High School.
 
 Maria has requested our assistance in repeating the school district analysis by excluding the scores for Thomas High School ninth graders and comparing the results against her earlier analysis.
 
 ## Methodology
 
-Utilizing the pandas numpy library and python coding on jupyter notebooks, and using the same development environment other analysts on the team have on their computers, we reproduced the school analysis excluding the math and reading scores for ninth graders at Thomas High School.
+Utilizing the *pandas numpy* library and *python* coding on *jupyter notebooks*, and using the same development environment other analysts on the team have on their computers, we reproduced the school analysis excluding the math and reading scores for ninth graders at Thomas High School.
 
 Our analysis utilized the same data files, mainly the *clean_students_complete.csv* and the *schools_complete.csv* data files (see Resources folder).
 
@@ -18,23 +18,23 @@ We utilized several *pandas* and *python* methods to summarize the data and calc
 
 In reproducing the analysis, we followed the same methodology as the original project to obtain comparable results. However, we believe that the methodology used to calculate the averages for some of the summary data frames is statistically incorrect. We have added a note in our summary of findings which elaborates on this issue.
 
-## Schools District Analysis Results
+## School District Analysis Results
 
 ### Replacing Ninth-Grade Reading and Math Scores
 
-In order to remove the ninth grade Thomas High Schools scores, we performed a *loc()* search for all students that met two conditions, school is Thomas High School and grade is ninth grade, and ran the code first to replace reading scores for empty data (Nan's), and then repurposed the same code to replace math scores for Nan's as well. Below is the segment of code we utilized:
+In order to remove the ninth grade scores for Thomas High School, we performed a *loc()* search for all students that met two conditions, school is Thomas High School and grade is ninth grade, and ran the code first to replace reading scores for empty data (Nan's), and then repurposed the same code to replace math scores for Nan's as well. Below is the segment of code we utilized:
 
 ![Replace Thomas High School 9th grade code.](Resources/Images/Replace_THS_9th_grade_code.png)
 
 
-To verify that the code was effective, we listed a few lines of the data to make sure that only the score fields were changed. Below is the printout of the sample records in the data:
+To verify that the code was effective, we listed a few lines of the data to make sure that only the score fields were changed. Below is the printout of the sample data records:
 
 ![Replace Thomas High School 9th grade DataFrame.](Resources/Images/Replace_THS_9th_grade_DataFrame.png)
 
 
 ### Recreating the School District Analysis
 
-To recreate the School District Analysis using the modified ninth grade data, we generated the following data frames which we compared to the initial School Distric Analysis results.
+To recreate the School District Analysis using the modified ninth grade data, we generated the following data frames which we compared to the initial School District Analysis results.
 
 * The district summary
 * The school summary
@@ -50,7 +50,7 @@ The following tables show the compared before and after results.
 
 #### (1) District Summary
 
-To update the district summary, we recalculated the total student count by subtracting the number of ninth-grade students in Thomas High School (461) from the total student count (38,709), then you'll recalculate the passing math and passing reading percentages, and the overall passing percentage with the recalculated total student count. The following tables show the before and after District Summary data frames, highliting any observed differences.
+To update the District Summary, we recalculated the total student count by subtracting the number of ninth-grade students in Thomas High School (461) from the total student count (38,709). We then recalculated the passing math and passing reading percentages, as well as the overall passing rates with the recalculated total student count. The following tables show the before and after District Summary data frames, highliting any observed differences.
 
 ##### District Summary - Before
 ![District Summary before.](Resources/Images/1_District_Summary_BEFORE.png)
@@ -59,11 +59,11 @@ To update the district summary, we recalculated the total student count by subtr
 ##### District Summary - After
 ![District Summary after.](Resources/Images/1_District_Summary_AFTER.png)
 
-How is the district summary affected? As can be seen from the results, there was a very small drop in the average math scores for the district, which fell from 79.0 to 78.9.
+How is the District Summary affected? As can be seen from the results, there was a very small drop in the average math scores for the district, which fell from 79.0 to 78.9.
 
 #### (2) School Summary
 
-Likewise, we updated the school summary based on the adjusted number of students after subtracting the Thomas High School ninth-grade student count. The following tables show the before and after Schools Summary data frames, highlighting any observed differences.
+Likewise, we updated the School Summary based on the adjusted number of students after subtracting the Thomas High School ninth grade student count. The following tables show the before and after School Summary data frames, highlighting any observed differences.
 
 ##### School Summary - Before
 ![School Summary before.](Resources/Images/2_School_Summary_BEFORE.png)
@@ -71,7 +71,7 @@ Likewise, we updated the school summary based on the adjusted number of students
 ##### School Summary - After
 ![School Summary after.](Resources/Images/2_School_Summary_AFTER.png)
 
-How is the school summary affected? The scores for Thomas High School excluding the ninth graders show average math scores slightly *lower* (83.35 vs. 83.42), reading scores slightly *higher* (83.90 vs. 83.85), passing math rate slightly *lower* (93.2% vs. 93.3%), passing reading rate slightly *lower* (97.0% vs. 97.3%) and overall passing rate also slightly *lower* (90.6% vs. 90.9%)
+How is the School Summary affected? The scores for Thomas High School excluding the ninth graders show average math scores slightly *lower* (83.35 vs. 83.42), reading scores slightly *higher* (83.90 vs. 83.85), passing math rate slightly *lower* (93.2% vs. 93.3%), passing reading rate slightly *lower* (97.0% vs. 97.3%) and overall passing rate also slightly *lower* (90.6% vs. 90.9%)
 
 #### (3) Top 5 Performing Schools
 
@@ -103,7 +103,7 @@ Relative to the other schools, replacing the ninth grader's math and reading sco
 
 #### (6) Reading Scores by Grade
 
-##### Readomg Scores by grade - before
+##### Reading Scores by grade - before
 ![Reading Scores per grade per school before.](Resources/Images/6_Reading_per_Grade-School_BEFORE.png)
 
 ##### Reading Scores by grade - after
@@ -143,7 +143,7 @@ Replacing ninth grade scores had no effect on the score by type summary tables.
 
 ## Summary
 
-The updated school district analysis after reading and math scores for the ninth grade at Thomas High School were replaced with Nans essentially produced four changes:
+The updated school district analysis, after replacing reading and math scores with Nan's for the ninth grade at Thomas High School, essentially produced four changes:
 
 * There was a very small drop in the average math scores for the district, which fell from 79.0 to 78.9.
 
@@ -153,6 +153,6 @@ The updated school district analysis after reading and math scores for the ninth
 
 * The analysis did not consider Thomas High School average math score of 83.6 and average reading score of 83.7 for ninth grade students.
 
-From the above results, we could not detect a measurable result that could lead us to believe there was academic dishonesty in the math and reading scores for Thomas High School ninth graders.
+From the above results, we could not detect a measurable bias that could lead us to believe there was academic dishonesty in the math and reading scores among Thomas High School ninth graders.
 
-As a note on methodology, we understand that average scores and passing rates for the Scores by Spending, Scores by Size and Scores by Type data frames should be based on averages calculated using student number weighting, in order to obtain accurate statistical results. The methodology used by Mary's team uses a simple average, calculated not on the granular data containing the individual student scores, but rather on a previously summarized result as contained in the *per_school_summary_df* data frame.
+As a note on methodology, we understand that average scores and passing rates for the Scores by Spending, Scores by Size and Scores by Type data frames should be based on averages calculated using student number weighting, in order to obtain accurate statistical results. The methodology utilized by Mary's team used simple averages (i.e an average of an average), calculated not on the granular data containing the individual student scores, but rather on a previously summarized result as contained in the *per_school_summary_df* data frame.
