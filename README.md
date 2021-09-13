@@ -111,35 +111,35 @@ Relative to the other schools, replacing the ninth grader's math and reading sco
 
 As can be observed in both math and reading scores by grade, there is no change to the results other than showing ninth grade scores for Thomas High School as Nan's.
 
-#### (7) Scores by Spending
+#### (7) Scores by School Spending
 
-##### Scores by Spending - before
+##### Scores by School Spending - before
 ![Scores by spending before.](Resources/Images/7_Scores_by_Spending_BEFORE.png)
 
-##### Scores by Spending - after
+##### Scores by School Spending - after
 ![Scores by spending after.](Resources/Images/7_Scores_by_Spending_AFTER.png)
 
-Replacing ninth grade scores had no effect on the score by spending summary tables.
+Replacing ninth grade scores had no effect on the score by school spending summary tables.
 
-#### (8) Scores by Size
+#### (8) Scores by School Size
 
-##### Scores by Size - before
+##### Scores by School Size - before
 ![Scores by size before.](Resources/Images/8_Scores_by_Size_BEFORE.png)
 
-##### Scores by Size - after
+##### Scores by School Size - after
 ![Scores by size after.](Resources/Images/8_Scores_by_Size_AFTER.png)
 
-Replacing ninth grade scores had no effect on the score by size summary tables.
+Replacing ninth grade scores had no effect on the score by school size summary tables.
 
-#### (9) Scores by Type
+#### (9) Scores by School Type
 
-##### Scores by Type - before
+##### Scores by School Type - before
 ![Scores by type before.](Resources/Images/9_Scores_by_Type_BEFORE.png)
 
-##### Scores by Type - after
+##### Scores by School Type - after
 ![Scores by type after.](Resources/Images/9_Scores_by_Type_AFTER.png)
 
-Replacing ninth grade scores had no effect on the score by type summary tables.
+Replacing ninth grade scores had no effect on the score by school type summary tables.
 
 ## Summary
 
